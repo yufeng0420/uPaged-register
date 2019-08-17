@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { setAlert } from "../actions/alert";
 import { register } from "../actions/register";
 import PropTypes from "prop-types";
-import icon from "../Sass/dist/img/icon.png";
+import logo from "../assets/icon.png";
 
 const Register = ({ setAlert, register }) => {
   const [formData, setFormData] = useState({
@@ -35,8 +35,8 @@ const Register = ({ setAlert, register }) => {
 
   return (
     <div className="register">
-      <section className="container">
-        <img className="icon" src={icon} alt="icon" />
+      <div className="container">
+        <img className="icon" src={logo} alt="icon" />
         <div className="authType">Nurse Register</div>
 
         <form action="" className="form">
@@ -112,7 +112,7 @@ const Register = ({ setAlert, register }) => {
             Back
           </button>
         </form>
-      </section>
+      </div>
       <div className="right-side" />
     </div>
   );

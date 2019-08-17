@@ -11,10 +11,8 @@ const App = () => {
   return (
     <Provider store={store}>
       <Router>
-        <section className="container">
-          <Alert />
-          <Route exact path="/" component={Register} />
-        </section>
+        <Alert />
+        <Route exact path="/" component={Register} />
       </Router>
     </Provider>
   );
