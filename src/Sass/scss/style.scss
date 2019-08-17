@@ -1,0 +1,93 @@
+@import "config";
+@import "form";
+@import "mobile";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+.register {
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 24%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+}
+
+.authType {
+  top: calc(10vh + 6px);
+  font-size: 1.2rem;
+  letter-spacing: 0.125rem;
+  text-align: center;
+}
+
+//Container
+
+.container {
+  position: relative;
+  width: 650px;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  background-color: #fbfbfb;
+  height: 100%;
+}
+
+.right-side {
+  height: 100%;
+  width: calc(100% - 650px);
+  position: relative;
+  background: url("../img/background.jpg") no-repeat center center/cover;
+}
+
+.alert {
+  padding: 0.8rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background-color: $light-color;
+  color: #333;
+
+  &-primary {
+    @include set-background($primary-color);
+  }
+
+  &-dark {
+    @include set-background($dark-color);
+  }
+
+  &-success {
+    @include set-background($success-color);
+  }
+
+  &-danger {
+    @include set-background($danger-color);
+  }
+}

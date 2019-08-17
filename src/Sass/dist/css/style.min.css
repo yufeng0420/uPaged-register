@@ -3,7 +3,7 @@
   -webkit-transform: none;
   transform: none;
   padding-top: 3.8rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   width: 400px;
   margin: 0 auto;
 }
@@ -167,8 +167,7 @@ img {
   height: 100%;
   width: calc(100% - 650px);
   position: relative;
-  background: url("./Sass/dist/img/background.jpg") no-repeat center
-    center/cover;
+  background: url("../img/background.jpg") no-repeat center center/cover;
 }
 
 .alert {
